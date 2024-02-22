@@ -1,5 +1,7 @@
 CS435
 Jason Chen
 Jchen610@binghamton.edu
+Usage:
+python3 assignment <Filename>
 LDA code was taken from:
 https://github.com/patrickloeber/MLfromscratch/blob/master/mlfromscratch/load_data.py

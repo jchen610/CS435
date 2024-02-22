@@ -231,9 +231,15 @@ def main():
     #originally based on the lecture example with row as attributes and column as N
     #so we must transpose the input matrix into that form then retranspose it back into proper form
     #after the reduction is completed
-    #PCA(transposeMatrix(inputMatrix))
+    
 
-    DCT(inputMatrix)
+    method = input("Select dct or pca\n")
+    if method == "pca":
+        PCA(transposeMatrix(inputMatrix))
+    elif method == "dct":
+        DCT(inputMatrix)
+    else:
+        print("Unrecognized input run again to try again")
   
 
 if __name__ == "__main__":
