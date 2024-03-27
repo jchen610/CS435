@@ -1,0 +1,12 @@
+Classification Error Rate For Naive Bayes: 0.20490141883176705
+Classification Error Rate For Improved Naive Bayes: 0.18082427369326204
+Mean Error Rate For 0.5 Sampling: 0.20384497266752652
+Standard Deviation Error Rate For 0.5 Sampling: 0.00047002337619824104
+Mean Error Rate For 0.6 Sampling: 0.20361157177077568
+Standard Deviation Error Rate For 0.6 Sampling: 0.0003386536146941873
+Mean Error Rate For 0.7 Sampling: 0.20372213009028925
+Standard Deviation Error Rate For 0.7 Sampling: 0.00023112692982282037
+Mean Error Rate For 0.8 Sampling: 0.20386954118297398
+Standard Deviation Error Rate For 0.8 Sampling: 0.0003439592162643556
+Mean Error Rate For 0.9 Sampling: 0.20405380504882986
+Standard Deviation Error Rate For 0.9 Sampling: 0.00033731417524097827

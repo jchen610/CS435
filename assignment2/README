@@ -1,0 +1,12 @@
+CS435
+Jason Chen
+Jchen610@binghamton.edu
+
+NOTE: 
+RAN INTO PROBLEMS RUNNING ON BINGHAMTON REMOTE SERVERS AS imblearn IS REQUIRED
+Was run on local machine
+All error rates are reported in output.txt
+Cleaned data with removed missing tuples is stored in clean_adult.data and clean_adult.test respectively
+
+Usage:
+python3 assignment2.py
