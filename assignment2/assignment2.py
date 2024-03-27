@@ -6,8 +6,11 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
 from sklearn.preprocessing import StandardScaler
 from imblearn.over_sampling import RandomOverSampler
+
 
 def main():
 
@@ -73,7 +76,6 @@ def main():
     with open('output.txt', 'a') as f:
         #f.write(classification_report(y_test, y_pred)+ "\n")
         f.write("Classification Error Rate For Improved Naive Bayes: " + str(improved_error_rate) + "\n")
-
         
     #Sampling for 50% 60% 70% 80% and 90%
 
@@ -114,5 +116,13 @@ def main():
         with open('output.txt', 'a') as f:
             f.write(f"Mean Error Rate For {percentage} Sampling: " + str(mean_err) + "\n")
             f.write(f"Standard Deviation Error Rate For {percentage} Sampling: " + str(std_err) + "\n")
+
+    random_forest_model = RandomForestClassifier()
+    random_forest_model = random_forest_model.fit(X_train, y_train)
+    random_forest_y_pred = random_forest_model.predict(X_test)
+    random_forest_y_pred_rate = 1 - accuracy_score(y_test, random_forest_y_pred)
+    with open('output.txt', 'a') as f:
+        f.write("Classification Error Rate For Random Forest: " + str(random_forest_y_pred_rate) + "\n")
+
 if __name__ == "__main__":
     main()
